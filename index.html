@@ -87,11 +87,10 @@
     <!-- Sfratti Section -->
     <section id="sfratti" class="container content-section">
         <div class="row">
-            <img class="imgSfratti" src="img/sfratti.jpg" />
+            <img class="imgSfratti" src="img/sfratti.png" />
         </div>
         <div class="row text-center">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
                 <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
                 <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
                 <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
@@ -102,11 +101,10 @@
     <!-- Occupazioni Section -->
     <section id="occupazioni" class="container content-section">
         <div class="row">
-            <img class="imgOccupazioni" src="img/occupazioni.jpg" />
+            <img class="imgOccupazioni" src="img/occupazioni.png" />
         </div>
         <div class="row text-center">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
                 <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
                 <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
                 <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
@@ -146,6 +144,172 @@
             <p>Copyright &copy; Your Website 2014</p>
         </div>
     </footer>
+
+    <!-- cookie start -->
+    <div data-role="infoCookie">
+
+        <div id="infoCookie" class="close">
+            <h2>Informativa sui cookie</h2>
+            <div class="content">
+                <p class="pCookie">Il presente sito utilizza i "cookie" per facilitare la navigazione. Puoi avere più informazioni nella pagina:
+                    <a href="cookie.html" target="_blank">Informativa sui Cookie</a>
+                    Se scegli di proseguire chiudendo il banner, acconsenti all'uso dei cookie.</p>
+                <a class="cookieOn" href="#" id="f5888d0bb58d611107e11f7cbc41c97a_ok">OK, ho capito</a>
+                <a class="cookieOff" href="#" id="f5888d0bb58d611107e11f7cbc41c97a_disattiva">Disattiva Cookie</a>
+                <button class="close" id="f5888d0bb58d611107e11f7cbc41c97a_chiudi"></button>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            /*!
+             * cookie-monster - a simple cookie library
+             * v0.3.0
+             * https://github.com/jgallen23/cookie-monster
+             * copyright Greg Allen 2014
+             * MIT License
+             */
+            var monster={set:function(a,b,c,d,e){var f=new Date,g="",h=typeof b,i="",j="";if(d=d||"/",c&&(f.setTime(f.getTime()+24*c*60*60*1e3),g="; expires="+f.toUTCString()),"object"===h&&"undefined"!==h){if(!("JSON"in window))throw"Bummer, your browser doesn't support JSON parsing.";i=encodeURIComponent(JSON.stringify({v:b}))}else i=encodeURIComponent(b);e&&(j="; secure"),document.cookie=a+"="+i+g+"; path="+d+j},get:function(a){for(var b=a+"=",c=document.cookie.split(";"),d="",e="",f={},g=0;g<c.length;g++){for(var h=c[g];" "==h.charAt(0);)h=h.substring(1,h.length);if(0===h.indexOf(b)){if(d=decodeURIComponent(h.substring(b.length,h.length)),e=d.substring(0,1),"{"==e)try{if(f=JSON.parse(d),"v"in f)return f.v}catch(i){return d}return"undefined"==d?void 0:d}}return null},remove:function(a){this.set(a,"",-1)},increment:function(a,b){var c=this.get(a)||0;this.set(a,parseInt(c,10)+1,b)},decrement:function(a,b){var c=this.get(a)||0;this.set(a,parseInt(c,10)-1,b)}};
+        </script>
+
+        <script type="text/javascript">
+            /* definizione comportamento custom: impostare key "handler" */
+            var cookieInfo = cookieInfo || {};
+            cookieInfo.handler = function(){
+                //https://developers.google.com/analytics/devguides/collection/gajs/
+                window['ga-disable-UA-32506067-1'] = true;
+            }
+        </script>
+
+        <script type="text/javascript">
+            /* Comportamento bannerInfoCookie */
+            (function(){
+                var md5 = "f5888d0bb58d611107e11f7cbc41c97a";
+                var infoCookie = document.getElementById('infoCookie');
+                var chiudi = document.getElementById(md5 + '_chiudi');
+                var ok = document.getElementById(md5 + '_ok');
+                var disattiva = document.getElementById(md5 + '_disattiva');
+                var cookieDismissedName = md5 + '_cookie_dismissed';
+                var cookieDisableName = md5 + '_cookie_disable';
+
+                var cookieDismissed = monster.get(cookieDismissedName);
+                var cookieDisabled = monster.get(cookieDisableName);
+                if (cookieDismissed !== 'true') {
+                    infoCookie.className = '';
+                }
+                if (cookieDisabled === 'true') {
+                    disableCookie();
+                }
+
+                function disableCookie(){
+                    cookieInfo && cookieInfo.handler && cookieInfo.handler();
+                }
+
+                function close(){
+                    infoCookie.className = 'close';
+                    monster.set(cookieDismissedName, 'true');
+                }
+
+                function attachEventListener(el, evName, callback){
+                    if (el.addEventListener) {
+                        el.addEventListener(evName, callback, false);
+                    }
+                    else {
+                        el.attachEvent("on"+evName, callback);
+                    }
+                }
+
+                attachEventListener(chiudi, 'click', close);
+                attachEventListener(ok, 'click', close);
+                attachEventListener(disattiva, 'click', function(){
+                    monster.set(cookieDisableName, 'true');
+                    disableCookie();
+                    close();
+                });
+
+            }());
+        </script>
+
+        <style>
+            #infoCookie{
+
+                background-color: #fef4ea;
+                color: #000;
+
+                bottom:0;
+                left:0;
+                font-size:12px;
+                position: fixed;
+                z-index: 10000;
+                width:100%;
+                padding:22px 3% 1% 3%;
+                opacity: 0.9;
+
+                -webkit-transition: all .5s; /* Safari 3.1 to 6.0 */
+                transition: all .5s;
+            }
+
+            #infoCookie .content p a{
+                color: #000 !important;
+                text-decoration: underline;
+                font-size: 12px !important;
+            }
+
+            .pCookie{
+                font-size: 12px !important;
+            }
+
+            #infoCookie.close{
+                top:-100%;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            #infoCookie h2{
+                font-size: 120%;
+                text-transform: uppercase;
+                margin: 0 0 20px 0;
+                font-weight:bold;
+            }
+
+            #infoCookie button.close{
+                background-color: #000000;
+                border:1px solid #FFF;
+                padding:5px 10px;
+                width: 35px;
+                height: 35px;
+                color:#FFF;
+                position: absolute;
+                right: 3%;
+                top:22px;
+                cursor: pointer;
+            }
+
+            #infoCookie button.close:after{
+                font-size: 15px;
+                line-height: 8px;
+                content:"x";
+            }
+
+            #infoCookie .cookieOff,
+            #infoCookie .cookieOn{
+                display: inline-block;
+                padding:5px 10px;
+                margin: 10px 0;
+                border:1px solid #FFF;
+            }
+
+            #infoCookie .cookieOn{
+                background-color: #FFF;
+                color: #000 !important;
+            }
+
+            #infoCookie .cookieOff{
+                background-color: #ad5638;
+                color: #FFF !important;
+            }
+        </style>
+    </div>
+    <!-- cookie end -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

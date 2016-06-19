@@ -100,7 +100,7 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
+    color: rgba(0,0,0,.8);
     background-color: transparent;
 }
 
@@ -447,8 +447,8 @@ body {
     padding-bottom: 20px;
 }
 .imgSfratti {
-    width: 150px;
-    height: 100px;
+    width: 200px;
+    margin-left: 20px;
 }
 
 @media(max-device-width: 480px){
@@ -458,8 +458,7 @@ body {
     }
 
     .imgSfratti {
-        width: 120px;
-        height: 80px;
+        width: 150px;
     }
 }
 
@@ -474,8 +473,8 @@ body {
     padding-bottom: 20px;
 }
 .imgOccupazioni {
-    width: 150px;
-    height: 60px;
+    width: 200px;
+    margin-left: 20px;
 }
 
 @media(max-device-width: 480px){
@@ -485,7 +484,20 @@ body {
     }
 
     .imgOccupazioni {
-        width: 120px;
-        height: 45px;
+        width: 150px;
     }
+}
+
+#cookie{
+    height: 100%;
+    padding-top: 120px;
+    color: black;
+}
+
+#cookie h2{
+    font-size: 20px;
+}
+
+#cookie p{
+    font-size: 14px;
 }
