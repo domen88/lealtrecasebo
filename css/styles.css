@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+
+body {
+	/*font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+	font-family: 'Fira Sans', sans-serif;
+}
+
+::selection {
+  background: #ebb32e;
+}
+::-moz-selection {
+  background: #ebb32e;
+}
+
+
+@media (max-width: 767px) {
+	.content {
+		padding: 15px;
+		margin-top: 100px;
+	}
+}
+@media (min-width: 768px) {
+
+	#menu-bar .panel {
+	margin-bottom: 0;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	}
+
+	#menu-bar li a {
+		color: #fff;
+		font-size: 14px;
+		font-weight: bold;
+		padding: 7px 15px;
+	}
+
+	#navbar {
+		float: left;
+		width: 300px;
+		height: 100%;
+		background: none !important;
+	}
+
+	.content {
+		margin-left: 300px;
+		min-height: 100%;
+		overflow-y: hidden;
+	}
+
+	.container {
+		margin-left: 25px;
+	}
+
+	.row {
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-bottom: 15px;
+	}
+
+}
+
+body{
+	background: url("../img/ciccione.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+article{
+	background-color: white;
+}
+
+ul{
+	list-style: none;
+}
+
+ul.firstLevel{
+	padding-left: 60px !important;
+	padding-top: 40px;
+}
+
+.nav > li {
+	padding-top: 12px;
+}
+
+a.menus:hover{
+	background: none;
+}
+
+a.sfratti{
+	background-color: #67a894 !important;
+}
+
+a.occupazioni{
+	background-color: #ebb32e !important;
+}
+
+a.alloggi{
+	background-color: #d67528 !important;
+}
+
+a.risposte{
+	background-color: #204060 !important;
+}
+
+a.chisiamo{
+	background-color: #a13e1c !important;
+}
+
+.logo{
+	width: 305px;
+	margin-left: -20px;
+	background-color: #a13e1c;
+}
+
+.contenuto{
+	display: none;
+	opacity: 0.9;
+	padding-left: 150px;
+    padding-right: 50px;
+}
+
+.innerArticle{
+	padding: 20px;
+}
+
+.outerArticle{
+    padding-top: 15px;
+}

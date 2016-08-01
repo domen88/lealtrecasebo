@@ -1,22 +1,15 @@
-# [Le altre case di Bologna](http://www.lealtrecasebo.it/)
+bootstrap-vertical-menu
+=======================
 
-Web document template based on boostrap twitter framework
+Vertical drop down menu for Twitter Bootstrap 3
 
-## Getting Started
+Instead of creating a standard horizontal menu bar with Twitter Bootstrap 3, this is a vertical menu with collapsible
+drop downs. 
 
-To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+The menu runs down the left side with the content to the right. 
 
-## Bugs and Issues
+It is fully-responsive and switches to a horizontal menu on mobile devices (screen sizes below 768px).
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-grayscale/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/grayscale/).
-
-## Creator
-
-Template create by **Domenico Scotece** and **Riccardo Venanzi**
+For more information on how this works, see my <a href="http://www.jeffmould.com/2013/12/15/create-twitter-bootstrap-vertical-drop-menu/">Blog</a>.
 
 
-## Copyright and License
-
-Copyright 2016 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-grayscale/blob/gh-pages/LICENSE) license.
