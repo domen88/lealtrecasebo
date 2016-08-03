@@ -12,6 +12,11 @@ body {
   background: #ebb32e;
 }
 
+a 
+{
+    text-decoration: none !important; 
+}
+
 
 @media (max-width: 767px) {
 	.content {
@@ -59,7 +64,26 @@ body {
 		margin-right: 15px;
 		margin-bottom: 15px;
 	}
+	
+	.navbar-collapse {
+   		max-height: none;
+   	}
 
+   	.panel-collapse{
+   		width: 300px;
+   	}
+
+   	.secondoLivello{
+   		background-color: white;
+   	}
+   	.secondoLivello.secondoLivelloFirst{
+   		margin-top: 10px;
+   		margin-bottom: 10px;
+   	}
+
+   	.secondoLivello.secondoLivelloNoFirst{
+   		margin-bottom: 10px;
+   	}
 }
 
 body{
@@ -130,4 +154,57 @@ a.chisiamo{
 
 .outerArticle{
     padding-top: 15px;
+}
+
+ul.panel-collapse > li > a {
+	display: block;
+}
+
+
+ul.panel-collapse.sfratti > li > a {
+	color: #67a894 !important;
+}
+
+ul.panel-collapse.sfratti > li:hover {
+	background-color: #67a894 !important;
+}
+
+ul.panel-collapse.sfratti > li:hover > a {
+	color: white !important;
+}
+
+ul.panel-collapse.occupazioni > li > a {
+	color: #ebb32e !important;
+}
+
+ul.panel-collapse.occupazioni > li:hover {
+	background-color: #ebb32e !important;
+}
+
+ul.panel-collapse.occupazioni > li:hover > a {
+	color: white !important;
+}
+
+ul.panel-collapse.alloggi > li > a {
+	color: #d67528 !important;
+}
+
+ul.panel-collapse.alloggi > li:hover {
+	background-color: #d67528 !important;
+}
+
+ul.panel-collapse.alloggi > li:hover > a {
+	color: white !important;
+}
+
+ul.panel-collapse.risposte > li > a {
+	color: #204060 !important;
+}
+
+ul.panel-collapse.risposte > li:hover {
+	background-color: #204060 !important;
+}
+
+ul.panel-collapse.risposte > li:hover > a {
+	color: white !important;
 }
