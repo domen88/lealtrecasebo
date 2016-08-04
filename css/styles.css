@@ -12,6 +12,23 @@ body {
   background: #ebb32e;
 }
 
+video#bgvid {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url(../img/ciccione.jpg) no-repeat;
+	background-size: cover;
+}
+
 a 
 {
     text-decoration: none !important; 
@@ -86,12 +103,100 @@ a
    	}
 }
 
-body{
+/*body{
 	background: url("../img/ciccione.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}*/
+
+.sfrattiNumeri{
+	background: url("../img/sfratti.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.asia{
+    background: url("../img/asia.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.reati{
+    background: url("../img/reati.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.gestione{
+    background: url("../img/gestione.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.sgombero{
+    background: url("../img/sgombero.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.comesiottengono{
+    background: url("../img/comesiottengono.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.scenario{
+    background: url("../img/ciccione.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.labas{
+    background: url("../img/labas.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.socialLog{
+    background: url("../img/socialLog.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.manutenzione{
+    background: url("../img/manutenzione.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.edificiPubblici{
+    background: url("../img/edificiPubblici.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 article{
@@ -207,4 +312,28 @@ ul.panel-collapse.risposte > li:hover {
 
 ul.panel-collapse.risposte > li:hover > a {
 	color: white !important;
+}
+
+ul.panel-collapse.sfratti > li.selected {
+	background-color: #67a894 !important;
+}
+
+ul.panel-collapse.sfratti > li.selected > a {
+	color: white !important;
+}
+
+ul.panel-collapse.occupazioni > li.selected {
+     background-color: #ebb32e !important;
+ }
+
+ul.panel-collapse.occupazioni > li.selected > a {
+    color: white !important;
+}
+
+ul.panel-collapse.alloggi > li.selected {
+    background-color: #d67528 !important;
+}
+
+ul.panel-collapse.alloggi > li.selected > a {
+    color: white !important;
 }
