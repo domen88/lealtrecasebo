@@ -207,6 +207,14 @@ a
 	background-size: cover;
 }
 
+.risposte-istituzionali{
+	background: url("../img/risposte.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 article{
 	background-color: white;
 }
@@ -344,4 +352,12 @@ ul.panel-collapse.alloggi > li.selected {
 
 ul.panel-collapse.alloggi > li.selected > a {
     color: white !important;
+}
+
+ul.panel-collapse.risposte > li.selected {
+	background-color: #204060 !important;
+}
+
+ul.panel-collapse.risposte > li.selected > a {
+	color: white !important;
 }
