@@ -25,7 +25,7 @@ video#bgvid {
 	-moz-transform: translateX(-50%) translateY(-50%);
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-	background: url(../img/ciccione.jpg) no-repeat;
+	background: url(../img/frame.jpg) no-repeat;
 	background-size: cover;
 }
 
