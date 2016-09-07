@@ -361,3 +361,44 @@ ul.panel-collapse.risposte > li.selected {
 ul.panel-collapse.risposte > li.selected > a {
 	color: white !important;
 }
+
+img.interna{
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+
+/*CAROSELLO */
+.owl-theme .owl-controls .owl-buttons div {
+	padding: 8px 10px !important;
+	font-size: 15px;
+}
+
+.owl-theme .owl-buttons i{
+	margin-top: 2px;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+	left: 0px;
+	top: 20%;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next{
+	right: 10px;
+	top: 20%;
+}
+
+.asia .owl-theme .owl-controls .owl-buttons .owl-prev{
+	left: 0px;
+	top: 40%;
+}
+
+.asia .owl-theme .owl-controls .owl-buttons .owl-next{
+	right: 10px;
+	top: 40%;
+}

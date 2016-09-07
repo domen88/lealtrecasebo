@@ -8,10 +8,13 @@
     <link rel="icon" type="image/png" href="../img/favicon.png" />
     <script src="../js/jquery-1.11.3.js"></script>
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/owl.carousel.min.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/owl.carousel.css" rel="stylesheet">
+    <link href="../css/owl.theme.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
@@ -46,19 +49,19 @@
                     <li class="secondoLivello secondoLivelloFirst"><a href="../sfratti/numeri.html">I numeri della crisi</a></li>
                     <li class="secondoLivello secondoLivelloNoFirst"><a href="../sfratti/sfratto.html">Storia di uno sfratto</a></li>
                     <li class="secondoLivello secondoLivelloNoFirst"><a href="../sfratti/picchetto.html">Come funziona un picchetto</a></li>
-                    <li class="secondoLivello secondoLivelloNoFirst"><a href="../sfratti/ufficiale-giudiziario.html">Dalla parte dell’ufficiale giudiziario</a></li>
                     <li class="secondoLivello secondoLivelloNoFirst"><a href="../sfratti/protocollo.html">Protocollo antisfratto</a></li>
+                    <li class="secondoLivello secondoLivelloNoFirst"><a href="../sfratti/ufficiale-giudiziario.html">Dalla parte dell’ufficiale giudiziario</a></li>
                 </ul>
             </li>
             <li class="panel dropdown">
                 <a data-toggle="collapse" data-parent="#menu-bar" href="#collapseTwo" class="menus occupazioni">
                     OCCUPAZIONI
                 </a>
-                <ul id="collapseTwo" class="panel-collapse collapse occupazioni">
+                <ul id="collapseTwo" class="panel-collapse collapse occupazioni in">
                     <li class="secondoLivello secondoLivelloFirst "><a href="#">Chi sono i senza casa</a></li>
                     <li class="secondoLivello secondoLivelloNoFirst selected"><a href="#">Edifici pubblici vuoti</a></li>
-                    <li class="secondoLivello secondoLivelloNoFirst"><a href="../occupazioni/labas.html">Labas</a></li>
-                    <li class="secondoLivello secondoLivelloNoFirst"><a href="../occupazioni/asia.html">Asia USB</a></li>
+                    <li class="secondoLivello secondoLivelloNoFirst"><a href="../occupazioni/labas.html">L&agrave;bas</a></li>
+                    <li class="secondoLivello secondoLivelloNoFirst"><a href="../occupazioni/asia.html">A.S.I.A. USB</a></li>
                     <li class="secondoLivello secondoLivelloNoFirst"><a href="../occupazioni/socialLog.html">Social Log</a></li>
                     <li class="secondoLivello secondoLivelloNoFirst"><a href="../occupazioni/reati.html">I reati coinvolti</a></li>
                     <li class="secondoLivello secondoLivelloNoFirst"><a href="../occupazioni/sgombero.html">Lo sgombero</a></li>
@@ -98,28 +101,108 @@
             <div class="row outerArticle">
                 <article>
                 	<div class="innerArticle">
-	                    <h1>Some Content Here</h1>
-	                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
-	                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>. Curabitur sodales ligula in libero. <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</i>. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. <b>Mauris massa</b>. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. </p>
-	                    <p>Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <b>Maecenas mattis</b>. Nam nec ante. <b>Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa</b>. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. <i>Aenean quam</i>. Nunc feugiat mi a tellus consequat imperdiet. <b>Fusce ac turpis quis ligula lacinia aliquet</b>. Vestibulum sapien. Proin quam. <b>Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis</b>. Etiam ultrices. </p>
-	                    <p>Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. </p>
-	                    <p>Ut ultrices ultrices enim. <b>Suspendisse in justo eu magna luctus suscipit</b>. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. <i>Quisque volutpat condimentum velit</i>. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. </p>
+	                    <h1>Edifici pubblici vuoti</h1>
+                        <p>Nel corso della nostra indagine abbiamo avuto modo di dialogare in merito alle occupazioni abusive con diversi militanti, occupanti e cittadini in genere, e il tema costantemente emerso a tal riguardo è stato quello del grande numero di edifici pubblici (o di proprietà di enti che perseguono fini pubblici) lasciati vuoti da anni e senza alcun progetto reale di riqualificazione e utilizzo. Così abbiamo deciso di cercare e visitare noi stesse alcuni dei casi più rappresentativi,  toccando con mano e vedendo personalmente lo spreco e in qualche modo l'ingiustizia che si cela dietro a questi edifici.</p>
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img class="interna" width="100%" height="60%" src="../img/occupazioni/gallery/1.jpg" alt="" />
+                                <p><b>VILLA SALUS</b></p>
+                                <p><b>Indirizzo: </b>Via Malvezza, 2-4</p>
+                                <p><b>Proprietà:</b> Comune di Bologna</p>
+                                <p><strong>Abbandono: </strong>In stato di abbandono dal 2007.</p>
+                                <p><strong>Breve storia: </strong>Ai tempi di Napoleone nota come <strong>Villa Monti</strong>, ha ospitato il fratello Luciano Bonaparte. Dopo gli anni 30 del Novecento la Villa ha iniziato un inarrestabile declino, saccheggiata dagli austriaci nel secondo '800 e poi rovinata dai bombardamenti, insieme al parco circostante. Solo <strong>nel 1950</strong> è stata infine trasformata in una <strong>struttura ospedaliera</strong> grazie all'intervento del professor Oscar Scaglietti, insigne ortopedico che l'ha trasformata in una struttura prestigiosa a livello mondiale. Alla sua<b> </b> morte (1993) nessuno si è preso la responsabilità della gestione della struttura. Così, durante l’amministrazione Cofferati (2005) è stata acquistata dal <strong>Comune</strong> per 5 milioni di euro, per farne un polo sanitario.</p>
+                                <p>Nessuno degli innumerevoli progetti proposti in città è mai stato portato a termine, così è dal 2007 che la struttura è vuota e inutilizzata, e quindi destinata all'oblio.</p>
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" height="60%" src="../img/occupazioni/gallery/2.jpg" alt="">
+                                <p><b>EX CLINICA BERETTA</b></p>
+                                <p><b>Indirizzo:</b> Via XXI Aprile, 15</p>
+                                <p><b>Proprietà:</b> AUSL, Azienda Unità Sanitaria Locale</p>
+                                <p><strong>Abbandono: </strong>dal 2007</p>
+                                <p><strong>Breve storia:</strong> L'edificio è ubicato in zona semi-centrale all'esterno della cerchia dei viali, nel quartiere residenziale Saragozza. La struttura, che si sviluppa su sei piani e <strong>risale al 1930</strong>, è stata inizialmente destinata a clinica privata.</p>
+                                <p>È poi diventata una rinomata <strong>clinica pubblica di odontoiatria</strong>, fino a che il servizio non è stato spostato all'interno del grande polo dell'Ospedale Maggiore. Avvenuto il trasferimento, è <strong>dal 2007 che l'edificio risulta vuoto</strong>. Non sapendo a quale uso destinare la struttura ormai decadente, la proprietà in passato ha deciso di mettere <b>all'asta</b> l’immobile, purtroppo senza successo in quanto tutte le aste indette fino ad ora sono andate deserte. Questo probabilmente perché sono necessarie ingenti opere manutentive e, fra l'altro, è necessario sottostare alle indicazioni dell'Istituto dei Beni Culturali, vista la rilevanza storica dell'edificio.</p>
+                                <p>Così, dopo un lungo periodo di abbandono, l’immobile è stato <strong>occupato</strong> abusivamente, prima per un breve periodo <strong>nel 2012</strong> e poi il primo marzo del <strong>2014</strong>, in occasione della Giornata mondiale del rifugiato e del richiedente asilo, grazie all'operato del sindacato <a href="asia.html" target="_blank">A.S.I.A. USB</a>.  L'ultima occupazione si è protratta fino a gennaio 2016. Oggi l’immobile è nuovamente in stato di abbandono e ha porte e finestre serrate da muri di mattoni.</p>
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" height="60%" src="../img/occupazioni/gallery/3.jpg" alt="">
+                                <p><b>VIA IRNERIO </b></p>
+                                <p><b>Indirizzo: </b>Via Irnerio 13</p>
+                                <p><b>Proprietà:</b> Policlinico Sant’Orsola</p>
+                                <p><strong>Abbandono</strong>: dal 2006</p>
+                                <p><strong>Breve storia:</strong> Edificio su diversi piani, destinato inizialmente alla locazione per uso abitativo, i cui ricavati erano riutilizzati per l'attività di servizio al pubblico. L'<strong>immobile è vuoto dal 2006</strong> e richiede ingenti opere manutentive interne.</p>
+                                <p>Perciò l'Azienda Ospedaliera ha cercato di alienare il  bene, mettendolo all'<strong>asta nel luglio 2010</strong>. L'asta è andata deserta e l'edificio è rimasto totalmente vuoto. Così, nell’<strong>ottobre 2013</strong> il sindacato A.S.I.A. USB ne ha guidato l'<strong>occupazione abusiva</strong> per dare un tetto a una sessantina di persone compresi diversi bambini. Dopo vari tentativi di trattativa con la proprietà, è stato sgomberato il 3 maggio 2016. Oggi è ancora in disuso e sigillato.</p>
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" height="60%" src="../img/occupazioni/gallery/3bis.jpg" alt="">
+                                <p><b>VIA IRNERIO </b></p>
+                                <p><b>Indirizzo: </b>Via Irnerio 13</p>
+                                <p><b>Proprietà:</b> Policlinico Sant’Orsola</p>
+                                <p><strong>Abbandono</strong>: dal 2006</p>
+                                <p><strong>Breve storia:</strong> Edificio su diversi piani, destinato inizialmente alla locazione per uso abitativo, i cui ricavati erano riutilizzati per l'attività di servizio al pubblico. L'<strong>immobile è vuoto dal 2006</strong> e richiede ingenti opere manutentive interne.</p>
+                                <p>Perciò l'Azienda Ospedaliera ha cercato di alienare il  bene, mettendolo all'<strong>asta nel luglio 2010</strong>. L'asta è andata deserta e l'edificio è rimasto totalmente vuoto. Così, nell’<strong>ottobre 2013</strong> il sindacato A.S.I.A. USB ne ha guidato l'<strong>occupazione abusiva</strong> per dare un tetto a una sessantina di persone compresi diversi bambini. Dopo vari tentativi di trattativa con la proprietà, è stato sgomberato il 3 maggio 2016. Oggi è ancora in disuso e sigillato.</p>
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" height="60%" src="../img/occupazioni/gallery/4.jpg" alt="">
+                                <p><b>EX SEDE INPDAP</b></p>
+                                <p><b>Indirizzo:</b> Via dei Mille, 9</p>
+                                <p><b>Proprietà:</b> Vecchia sede Inpdap, oggi patrimonio INPS</p>
+                                <p><strong>Abbandono:</strong> dal 2011</p>
+                                <p><strong>Breve storia: </strong>L'edificio, costituito da 5 piani e da decine di uffici, è una <strong>vecchia sede dell'Inpdap</strong>, in disuso da un paio d'anni. Con la legge 201/2011 l’INDAP è stata assorbita dall’Inps, la quale, oltre alle funzioni, ne ha acquisito anche i beni immobiliari.  Tra gli immobili INPDAP a Bologna rientra la sede di Via dei Mille 9, abbandonata da quando si è proceduto all'accorpamento degli uffici in via Gramsci 6, già sede INPS. Da allora l’edificio è vuoto, ad eccezione dell’esperienza di occupazione abusiva nel luglio 2015 che, guidata dal collettivo <strong>Labàs</strong>, ha dato per pochi giorni un tetto a un’ottantina di persone. A luglio 2016 l’edificio è ancora vuoto e senza lavori in corso.</p>
+
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" height="60%" src="../img/occupazioni/gallery/5.jpg" alt="">
+                                <p><b>EX SCUOLE FERRARI</b></p>
+                                <p><b>Indirizzo:</b> Via Toscana, 36</p>
+                                <p><b>Proprietà:</b> Prima Comune di Bologna, ora Carisbo</p>
+                                <p><strong>Abbandono:</strong> dal 2003</p>
+                                <p><strong>Breve storia: </strong>L’edificio è stato di proprietà del Comune di Bologna fino a marzo 2002. Fino ad allora è stato adibito ad istituto scolastico. Nel <strong>2002</strong> è stato avviato un atto di permuta, con cui è stato <strong>ceduto alla Carisbo</strong>. Leggendo l'<a href="http://atti.comune.bologna.it/Atti/GCSTOR.nsf/DCStampaWEB?OpenForm&amp;ParentUNID=DC88E8221624E8CDC1256CEE004E6727" target="_blank">atto</a> redatto per sancire il passaggio, sembra che le motivazioni che hanno spinto il Comune a portare a termine lo scambio, siano state principalmente legate alla possibilità di disporre di liquidi. Infatti, in cambio la Carisbo ha offerto al Comune un edificio di valore inferiore a questo in cui spostare l’attività didattica, insieme a  1.623.384,86 Euro in contanti. Da allora l’edificio è vuoto, ad eccezione di un’<a href="http://bologna.repubblica.it/cronaca/2016/02/10/news/sgombero-133087315/" target="_blank">occupazione abusiva</a> durata dal 2013 al febbraio 2016.</p>
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" height="60%" src="../img/occupazioni/gallery/6.jpg" alt="">
+                                <p><strong>EX </strong><b>POSTE</b></p>
+                                <p><b>Proprietà:</b> Poste Italiane</p>
+                                <p><b>Indirizzo:</b>  Via Zanardi, 28-30</p>
+                                <p><strong>Breve storia: </strong>Due interi stabili vuoti da decenni.</p>
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" height="60%" src="../img/occupazioni/gallery/7.jpg" alt="">
+                                <p><strong>EX </strong><b>POSTE</b></p>
+                                <p><b>Proprietà:</b> Poste Italiane</p>
+                                <p><b>Indirizzo:</b>  Via Zanardi, 28-30</p>
+                                <p><strong>Breve storia: </strong>Due interi stabili vuoti da decenni.</p>
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" height="60%" src="../img/occupazioni/gallery/8.jpg" alt="">
+                                <p><b>VIA SANT’ISAIA - EX MANICOMIO</b></p>
+                                <p><b>Proprietà:</b> Città Metropolitana di Bologna, gestione Acer</p>
+                                <p><b>Indirizzo:</b>  Via Sant’Isaia 88</p>
+                                <p><strong>Abbandono</strong>: dal 2011</p>
+                                <p><b><strong>Breve storia:</strong> </b>Si hanno notizie di costruzioni in questa zona già dal 13° secolo.</p>
+                                <p>È stato il <strong>Convento S. Giovanni Battista</strong>. Nel 1799 il convento è stato trasformato in<strong> Caserma</strong>. Ne 1819 è ritornato ad essere Convento delle Suore Salesiane. Dal <strong>1867 al 1978 è stato Ospedale Psichiatrico</strong> – Manicomio cittadino. Con la legge 180 del 1978, detta Legge Basaglia, è stato chiuso il Manicomio. Dopo un periodo di chiusura nel 2011, la struttura è stata riconsegnata al Sindaco. Una delle persone che lavora vicino ci ha riferito che ora gli alloggi di fronte al 90 sono murati, perché necessitano di lavori imponenti di messa in sicurezza. Il terremoto del 2012 ne ha poi peggiorato le condizioni. Gli alloggi ora sono in gestione ad <strong>Acer</strong>, che nel <strong>novembre 2014</strong> ha avviato un progetto esecutivo di lavori. A luglio 2016 gli alloggi risultano ancora murati e incompiuti.</p>
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" height="60%" src="../img/occupazioni/gallery/9.jpg" alt="">
+                                <p><b>EX CINEMA EMBASSY</b></p>
+                                <p><b>Indirizzo:</b> Via Azzo Gardino 61</p>
+                                <p><b>Proprietà:</b> Agenzia regionale del demanio o Monopoli di Stato</p>
+                                <p><strong>Abbandono: </strong>dal 2003</p>
+                                <p><strong>Breve storia: </strong>Edificio collocato all'interno dell'area della manifattura delle arti, è stato il <strong>Dopolavoro dei Monopoli di Stato</strong>. La prima, seppur breve, occupazione risale al 2003. Sono seguite altre brevi occupazioni nel 2007 e nel 2008, sgomberate in quanto si diceva che l'edificio sarebbe dovuto diventare il deposito dei cedolini delle giocate del Totocalcio. Nessun progetto venne effettivamente avviato. La struttura è da allora ancora vuota e senza lavori in atto visibili.</p>
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" height="60%" src="../img/occupazioni/gallery/10.jpg" alt="">
+                                <p><b>EX POSTE</b></p>
+                                <p><b>Indirizzo: </b>Via Agucchi 175</p>
+                                <p><b>Proprietà:</b> Poste Italiane (Europa Gestioni Immobiliari)</p>
+                                <p><strong>Abbandono</strong>: dal 2005</p>
+                                <p><strong>Breve storia:</strong> L'immobile, un tempo <strong>casa-albergo dei postini</strong>, è stato abitato fino al 2005, quando la proprietà ha mandato via anche gli ultimi affittuari. In questa occasione l'amministrazione comunale era stata rassicurata sul fatto che si sarebbe scongiurato l'abbandono dell'immobile. Ma non è andata così, infatti ancora ad agosto 2016 l'edificio risulta vuoto, <strong>con 3 piani e 75 appartamenti</strong> consacrati allo spreco.</p>
+                                <p>Nel 2009 i Vigili del Fuoco hanno mandato ad Europa Gestioni Immobiliari (l'immobiliare legata alle Poste) un verbale in cui dichiaravano per nulla sicura la costruzione, in particolare per le infiltrazioni continue di acqua piovana nel tetto. Da allora è cambiato molto poco, i piccioni invadono i balconi, la vegetazione inizia a crescere sulla facciata dell'edificio e nel piazzale di fronte ci si imbatte in vecchie Alfa Romeo abbandonate o divani pronti a marcire.</p>
+                            </div>
+                        </div>
                     </div>
                 </article>
             </div>
-            <div class="row outerArticle">
-                <article>
-                	<div class="innerArticle">
-	                    <h1>Some More Content</h1>
-	                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
-	                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>. Curabitur sodales ligula in libero. <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</i>. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. <b>Mauris massa</b>. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. </p>
-	                    <p>Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <b>Maecenas mattis</b>. Nam nec ante. <b>Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa</b>. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. <i>Aenean quam</i>. Nunc feugiat mi a tellus consequat imperdiet. <b>Fusce ac turpis quis ligula lacinia aliquet</b>. Vestibulum sapien. Proin quam. <b>Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis</b>. Etiam ultrices. </p>
-	                    <p>Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. </p>
-	                    <p>Ut ultrices ultrices enim. <b>Suspendisse in justo eu magna luctus suscipit</b>. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ul
-	                        lamcorper. <i>Quisque volutpat condimentum velit</i>. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. </p>
-                    </div>
-                </article>
-            </div>
+
         </div>
     </div>
 </div>
@@ -128,7 +211,18 @@
 
         setTimeout(function(){
             $('[data-role="contenuto"]').fadeIn();
+            $('#owl-demo').owlCarousel({
+                autoPlay : false,
+                stopOnHover : true,
+                navigation: true,
+                navigationText: [
+                    "<i class='glyphicon glyphicon-chevron-left'></i>",
+                    "<i class='glyphicon glyphicon-chevron-right'></i>"
+                ],
+                singleItem : true
+            });
         }, 3000);
+
     });
 </script>
 </body>
