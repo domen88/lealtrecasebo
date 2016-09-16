@@ -3,7 +3,15 @@
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
+  	audio{
+  		display: none;
+  	}
+
   	video#bgvid {
+   		display: none;
+   	}
+
+   	.mute {
    		display: none;
    	}
 

@@ -409,3 +409,40 @@ img.interna{
 	right: 10px;
 	top: 40%;
 }
+
+.mute{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: #a13e1c;
+	cursor: pointer;
+}
+
+.volume{
+	font-size: 40px;
+    padding: 6px;
+    color: white;
+}
+
+.hide{
+	display: none;
+}
+
+.lombardia{
+	color: #65A692;
+}
+
+.lazio{
+	color: #E9B02B;
+}
+
+.emilia{
+	color: #A23E1C;
+}
+
+.campania{
+	color: #1D4163;
+}
