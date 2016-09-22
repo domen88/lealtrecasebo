@@ -8,11 +8,14 @@
     <link rel="icon" type="image/png" href="../img/favicon.png" />
     <script src="../js/jquery-1.11.3.js"></script>
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/owl.carousel.min.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/mobile.css" rel="stylesheet">
+    <link href="../css/owl.carousel.css" rel="stylesheet">
+    <link href="../css/owl.theme.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
@@ -46,7 +49,7 @@
                 <ul id="collapseOne" class="panel-collapse sfratti collapse">
                     <li class="secondoLivello secondoLivelloFirst"><a href="../sfratti/numeri.html">I numeri della crisi</a></li>
                     <li class="secondoLivello secondoLivelloNoFirst"><a href="../sfratti/sfratto.html">Storia di uno sfratto</a></li>
-                    <li class="secondoLivello secondoLivelloNoFirst"><a href="../sfratti/picchetto.html">Come funziona un picchetto</a></li>
+                    <li class="secondoLivello secondoLivelloNoFirst"><a href="../sfratti/picchetto.html">Il picchetto antisfratto</a></li>
                     <li class="secondoLivello secondoLivelloNoFirst"><a href="../sfratti/protocollo.html">Protocollo antisfratto</a></li>
                     <li class="secondoLivello secondoLivelloNoFirst"><a href="../sfratti/ufficiale-giudiziario.html">Dalla parte dell’ufficiale giudiziario</a></li>
                 </ul>
@@ -58,6 +61,7 @@
                 <ul id="collapseTwo" class="panel-collapse collapse occupazioni">
                     <li class="secondoLivello secondoLivelloFirst"><a href="../occupazioni/chisono.html">Chi sono i senza casa</a></li>
                     <li class="secondoLivello secondoLivelloNoFirst"><a href="../occupazioni/edifici-pubblici.html">Edifici pubblici vuoti</a></li>
+                    <li class="secondoLivello secondoLivelloNoFirst"><a href="../occupazioni/grandi_occupazioni.html">Timeline grandi occupazioni</a></li>
                     <li class="secondoLivello secondoLivelloNoFirst"><a href="../occupazioni/labas.html">L&agrave;bas</a></li>
                     <li class="secondoLivello secondoLivelloNoFirst"><a href="../occupazioni/asia.html">A.S.I.A. USB</a></li>
                     <li class="secondoLivello secondoLivelloNoFirst"><a href="../occupazioni/socialLog.html">Social Log</a></li>
@@ -69,11 +73,12 @@
                 <a data-toggle="collapse" data-parent="#menu-bar" href="#collapseThree" class="menus alloggi">
                     ALLOGGI POPOLARI
                 </a>
-                <ul id="collapseThree" class="panel-collapse collapse alloggi">
-                    <li class="secondoLivello secondoLivelloFirst selected"><a href="#">Lo Scenario</a></li>
-                    <li class="secondoLivello secondoLivelloNoFirst"><a href="../alloggi-popolari/gestione.html">Gestione</a></li>
-                    <li class="secondoLivello secondoLivelloNoFirst"><a href="../alloggi-popolari/come-si-ottengono.html">Come Si Ottengono</a></li>
-                    <li class="secondoLivello secondoLivelloNoFirst"><a href="../alloggi-popolari/manutenzione.html">Manutenzione</a></li>
+                <ul id="collapseThree" class="panel-collapse collapse alloggi in">
+                    <li class="secondoLivello secondoLivelloFirst selected"><a href="#">Lo scenario</a></li>
+                    <li class="secondoLivello secondoLivelloNoFirst"><a href="../alloggi-popolari/gestione.html">Ente Gestore</a></li>
+                    <li class="secondoLivello secondoLivelloNoFirst"><a href="../alloggi-popolari/come-si-ottengono.html">Come si ottengono</a></li>
+                    <li class="secondoLivello secondoLivelloNoFirst"><a href="../alloggi-popolari/scandalo_2004.html">Lo scandalo del 2004</a></li>
+                    <li class="secondoLivello secondoLivelloNoFirst"><a href="../alloggi-popolari/manutenzione.html">Manutenzioni</a></li>
                     <li class="secondoLivello secondoLivelloNoFirst"><a href="../alloggi-popolari/abusivismo.html">Abusivismo</a></li>
                 </ul>
             </li>
@@ -87,8 +92,8 @@
                     <li class="secondoLivello secondoLivelloNoFirst"><a href="../risposte-istituzionali/social.html">Social Housing</a></li>
                 </ul>
             </li>
-            <li><a href="#" class="menus chisiamo">CHI SIAMO</a></li>
-            <li><a href="#" class="menus chisiamo">MAPPA DEL SITO</a></li>
+            <li><a href="#" class="menus chisiamo">PHOTOGALLERY</a></li>
+            <li><a href="../chisiamo.html" class="menus chisiamo">CHI SIAMO</a></li>
         </ul>
     </div>
 </div>
@@ -98,26 +103,163 @@
         <div class="col-md-12">
             <div class="row outerArticle">
                 <article>
-                	<div class="innerArticle">
-	                    <h1>Some Content Here</h1>
-	                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
-	                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>. Curabitur sodales ligula in libero. <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</i>. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. <b>Mauris massa</b>. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. </p>
-	                    <p>Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <b>Maecenas mattis</b>. Nam nec ante. <b>Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa</b>. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. <i>Aenean quam</i>. Nunc feugiat mi a tellus consequat imperdiet. <b>Fusce ac turpis quis ligula lacinia aliquet</b>. Vestibulum sapien. Proin quam. <b>Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis</b>. Etiam ultrices. </p>
-	                    <p>Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. </p>
-	                    <p>Ut ultrices ultrices enim. <b>Suspendisse in justo eu magna luctus suscipit</b>. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. <i>Quisque volutpat condimentum velit</i>. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. </p>
+                	<div class="innerArticle text-justify">
+	                    <h1>Dati Italia e Bologna</h1>
+                        <p>Il tema<strong> casa</strong> rappresenta ormai da diversi anni un <strong>problema di carattere nazionale</strong>; la crisi economica diffusa a partire dal 2008 ha portato, infatti, all'aumento di situazioni di criticità legate principalmente alla <strong>perdita del lavoro</strong> e, di conseguenza, alla<strong> riduzione del patrimonio dei cittadini</strong>. Le situazioni di fragilità e vulnerabilità sociale si sono estese dunque anche quelle fasce di popolazione che da una condizione di benessere si sono trovate all'improvviso a dover fare i conti con uno stato economico inatteso e difficile da affrontare.</p>
+                        <p>Il <strong>disagio abitativo</strong>, infatti, non riguarda solo categorie tradizionalmente svantaggiate come <strong>disoccupati</strong>, <strong>lavoratori</strong> <strong>precari ed</strong><strong> extracomunitari</strong>, ma anche le<strong> famiglie monoreddito</strong> o a <strong>reddito medio basso</strong> che non riescono ad accedere al mercato privato della locazione a causa dell'elevato costo dei canoni di affitto e di una scarsa disponibilità di alloggi di edilizia residenziale pubblica <strong>(ERP)</strong> ceduti in locazione.</p>
+                        <p>Oltre all'incalzante crisi economica, l'emergenza abitativa in tutto il Paese può essere attribuita anche alla crescente riduzione di alloggi ERP dovuta al <strong>processo di dismissione</strong> avviato nel 1993, che ha determinato una perdita di oltre il 22% del patrimonio. Il ricavato delle vendite degli alloggi di edilizia residenziale pubblica, infatti, non risulta sufficiente a ricostruire nemmeno un terzo del patrimonio venduto a causa dei prezzi definiti in maniera non coerente con i prezzi di mercato degli alloggi.
+                            <br />In ultimo, ma non per importanza, ad aggravare la situazione è anche <strong>la mancanza di finanziamenti costanti</strong>: fino al 1998 il settore dell'edilizia sociale ha beneficiato dei fondi <strong>Gescal</strong>, grazie ai quali è stato possibile ridurre il fabbisogno abitativo. Eliminati i fondi Gescal, a questi non è corrisposta nessuna risorsa sostitutiva che garantisse una continuità alle politiche di welfare nel settore abitativo.</p>
+                        <p>Con il <strong>Piano Casa</strong>, ovvero con la <strong>Legge 80/2014</strong>,<strong> </strong>sembra aprirsi tuttavia uno spiraglio, infatti la legge, attraverso la modifica delle misure per l'alienazione degli alloggi di edilizia residenziale pubblica e la formulazione di un Programma di recupero e razionalizzazione degli immobili, prevede il ripristino di alloggi di risulta e la manutenzione straordinaria anche ai fini dell'adeguamento energetico, e che le risorse derivanti dalle alienazioni siano destinate esclusivamente alla realizzazione o all'acquisto di nuovi alloggi ERP.
+                            <br />L'importo complessivo assegnato alla Regione Emilia-Romagna è di euro <strong>35.173.991,11</strong>.</p>
+                        <p>Focalizzandoci sullo scenario italiano, riportiamo alcuni dati della ricerca effettuata da Nomisma per conto di Federcasa, dai quali emerge che nel <strong>2015</strong>:</p>
+                        <p class="text-center"><img src="../img/alloggi/dati.png" alt="dati" class="interna"></p>
+                        <p>Anche la città di <strong>Bologna</strong>, in merito alla situazione abitativa, presenta degli elementi di progressiva criticità.
+                            Secondo quanto emerge dall'indagine sui bilanci delle famiglie italiane condotta dalla Banca d'Italia e dai dati pervenuti da Acer Bologna e Istat, nel <strong>2014</strong> i nuclei familiari bolognesi che si trovano in una condizione di disagio economico sono <strong>20.100</strong>, ossia il <strong>40,3%</strong> del totale.</p>
+                        <p>Uno scenario complesso è anche quello mostrato dal forte calo delle assegnazioni di alloggi di edilizia residenziale pubblica. Si è passati, infatti, da un totale di <strong>305 alloggi assegnati nel 2007 a 135 alloggi nel 2015</strong>.
+                            <br />Secondo il Presidente di Acer Bologna, le cause di questo calo repentino sono da attribuire a <strong>tre principali fattori</strong>:</p>
+                        <ul style="list-style: disc;">
+                            <li>la possibilità di presentare domanda per alloggi ERP online attraverso modulo di autocertificazione: questo comporta molto spesso la presentazione di domande non idonee e dunque un gap tra domande presentate e alloggi assegnati;</li>
+                            <li>la modifica del valore ISEE;</li>
+                            <li>la modifica delle legge regionale 24/2001 che prevede differenti soglie economiche per l'accesso e per la permanenza in alloggi ERP.</li>
+                        </ul>
+                        <p>Questi sono certamente alcuni dei fattori da tenere in considerazione per la diminuzione del flusso di assegnazioni negli ultimi anni, ma va specificato innanzitutto il fatto che la novità inerente la <strong>possibilità di autocertificazione</strong> è stata introdotta nel novembre 2012, quindi sembra strano che il vertiginoso calo si verifichi solo nel 2015.
+                            In dubbio è anche l'influenza sul 2015 della <strong>modifica del valore ISEE</strong>, in quanto risalente a giugno 2016, con la delibera G.R. 894 del 13 luglio 2016.</p>
+                        <p>Qui di seguito riportiamo l'intervista a <strong>Claudio Felicani</strong>,<strong> Presidente di Acer Bologna</strong>, il quale si esprime a questo proposito in rappresentanza di tutto l'ente gestore.</p>
+                        <br />
+                        <iframe src="https://www.youtube.com/embed/PAaw1WMesjk" frameborder="0" width="100%" height="60%" allowfullscreen="allowfullscreen"></iframe>
+                        <br />
+                        <br />
+                        <p>Ulteriore aspetto interessante dello scenario bolognese che emerge dalla ricerca effettuata da Nomisma, è la differenza tra i profili dei richiedenti e i profili degli utenti degli alloggi ERP, che può essere sintetizzata di seguito:</p>
+                        <p><strong>Richiedenti:</strong></p>
+                        <ul style="list-style: disc;">
+                            <li>Cittadinanza straniera: 57,2%</li>
+                            <li>Nucleo pluricomponente: 50,2%</li>
+                            <li>Coppie giovani: 18,2%</li>
+                            <li>Incidenza del canone sul reddito: &gt; 30% : 54,9%</li>
+                            <li>Età &lt; 45 anni 58,1%</li>
+                            <li>Reddito familiare &gt; 26000 €: 5,8%</li>
+                        </ul>
+                        <p><strong>Utenti:</strong></p>
+                        <ul style="list-style: disc;">
+                            <li>Cittadinanza straniera: 14,5%</li>
+                            <li>Nucleo pluricomponente: 33,0%</li>
+                            <li>Coppe giovani: 0,2%</li>
+                            <li>Età &lt; 45 anni: 15,7%</li>
+                            <li>Reddito familiare &gt; 26000 €: 18,7%</li>
+                        </ul>
+                        <p>Viene quindi da chiedersi quanto l’ente gestore persegua il proprio ruolo preoccupandosi concretamente di rispondere al fabbisogno abitativo che caratterizza le famiglie che vivono a Bologna.</p>
                     </div>
                 </article>
             </div>
             <div class="row outerArticle">
                 <article>
-                	<div class="innerArticle">
-	                    <h1>Some More Content</h1>
-	                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
-	                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>. Curabitur sodales ligula in libero. <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</i>. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. <b>Mauris massa</b>. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. </p>
-	                    <p>Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <b>Maecenas mattis</b>. Nam nec ante. <b>Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa</b>. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. <i>Aenean quam</i>. Nunc feugiat mi a tellus consequat imperdiet. <b>Fusce ac turpis quis ligula lacinia aliquet</b>. Vestibulum sapien. Proin quam. <b>Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis</b>. Etiam ultrices. </p>
-	                    <p>Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. </p>
-	                    <p>Ut ultrices ultrices enim. <b>Suspendisse in justo eu magna luctus suscipit</b>. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ul
-	                        lamcorper. <i>Quisque volutpat condimentum velit</i>. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. </p>
+                	<div class="innerArticle text-justify">
+	                    <h1>Dove sono</h1>
+                        <p>Nella mappa rappresentata sotto vengono riportati i numeri delle assegnazioni ERP avvenute nel<strong> 2010 nella città di Bologna, suddivise per quartiere</strong>. Purtroppo questi sono i dati più recenti trovati a riguardo, ma ciò nonostante risulta chiaro che la maggior concentrazione di alloggi di edilizia residenziale pubblica si trovi nei quartieri Navile e San Donato.</p>
+                        <p class="text-center"><img src="../img/alloggi/mappa.png" alt="mappa" class="interna" width="100%"></p>
+                        <p>Diverse zone in questi quartieri sono state, e spesso sono ancora oggi, letteralmente abbandonate a se stesse, permettendo in questo modo lo svilupparsi vere e proprie <strong>ghettizzazioni</strong> degli abitanti che versano in condizioni di disagio. Imprescindibili nel panorama di queste zone sono gli alveari umani molto simili a grigi casermoni isolati dagli altri edifici, in cui si concentrano i principali episodi di disagio e criminalità.</p>
+                        <p>Per arginare la problematica il Comune di Bologna, a partire dal 2014, ha avviato politiche dette di<strong> mix sociale</strong>, che consistono in azioni di rigenerazione degli insediamenti urbani e di integrazione fra i cittadini, al fine di garantire una composizione <strong>variegata degli abitanti</strong> di un comparto abitativo, non solo in termini sociali ma anche culturali, economici, demografici e di provenienza geografica.</p>
+                        <p>Tuttavia, le politiche messe in atto dalle istituzioni risultano ancora sperimentali e diffuse a macchia di leopardo: abbiamo infatti visitato una serie di palazzi in questi quartieri in cui il problema è molto lontano dall’essere risolto. Solo per citare un esempio lampante, in alcune inequivocabili zone del quartiere San Donato alcuni abitanti ci hanno riferito che queste difficoltà di integrazione tra inquilini potrebbero essere dovute anche al fatto che molte delle persone che abitano questi palazzi hanno ottenuto contratti solo provvisori, e di conseguenza non sono granché interessate a intessere buone relazioni di vicinato.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="row outerArticle">
+                <article>
+                    <div class="innerArticle text-justify">
+                        <h1 class="text-left">Associazione a tutela degli inquilini delle case popolari</h1>
+                        <br />
+                        <ul class="media-list">
+                            <li class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="../img/alloggi/asia.jpg" width="155" height="155" alt="asia">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <br />
+                                    <p><a href="http://asia.usb.it/" target="_blank"><strong>Associazione inquilini ed abitanti</strong></a>, fa parte della più ampia confederazione USB (Unione sindacale di base) e presenta diverse sedi in tutta Italia. Si occupa di diritto alla casa e di tutte le tematiche a esso connesse come sfratti, affitti, patti in deroga, offendo consulenza e assistenza legale a chiunque riscontri problematiche di questo genere.</p>
+                                </div>
+                            </li>
+                            <br />
+                            <li class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="../img/alloggi/pugno.jpg" width="155" height="155" alt="pugni chiusi">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <p>L'<a href="https://www.facebook.com/Associazione-Sindacale-Pugno-Chiuso-1669514139936828/?fref=ts" target="_blank"><strong>Associazione Sindacale Pugno Chiuso</strong></a> nasce per volere di alcuni degli inquilini delle case popolari situate in via Gandusio, che si riuniscono ogni lunedì a partire dalle 18.00 in una sala del Circolo Arci Guernelli, proprio all'interno di uno dei grandi palazzi del quartiere.</p>
+                                    <p>Questa associazione si pone l'obiettivo di rivendicare alcuni dei diritti che, a parere di numerosi inquilini, non sono più garantiti loro. E lo fa tramite assemblee aperte, l'organizzazione di picchetti anti-sfratto, la partecipazione a manifestazioni di lotta per la casa e il tentativo di fare informazione e offrire consulenza su normative e ingiustizie ai danni di tutti gli abitanti degli alloggi popolari.</p>
+                                </div>
+                            </li>
+                            <br />
+                            <li class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="../img/alloggi/sunia.jpg" width="155" height="155" alt="sunia">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <br />
+                                    <p><a href="http://www.sunia.it/" target="_blank"><strong>Sindacato Unitario Nazionale Inquilini e Assegnatari</strong></a>, è un’organizzazione molto diffusa sul territorio nazionale e si occupa di tutelare sia gli inquilini di edilizia privata che gli assegnatari degli alloggi di edilizia residenziale pubblica, cercando di rappresentare un aiuto a chiunque versi in condizioni di disagio abitativo, con l’obiettivo di garantire una costante tutela del diritto alla casa.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <br />
+                        <iframe src="https://www.youtube.com/embed/o2wkHkpdfMo" frameborder="0" width="100%" height="60%" allowfullscreen="allowfullscreen"></iframe>
+                        <br />
+                        <br />
+                    </div>
+                </article>
+            </div>
+            <div class="row outerArticle">
+                <article>
+                    <div class="innerArticle text-justify">
+                        <h1 class="text-left">Disciplina dell'intervento pubblico nel settore abitativo</h1>
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img class="interna" width="100%" src="../img/alloggi/gallery-scenario/1.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" src="../img/alloggi/gallery-scenario/2.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" src="../img/alloggi/gallery-scenario/3.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" src="../img/alloggi/gallery-scenario/4.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" src="../img/alloggi/gallery-scenario/5.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" src="../img/alloggi/gallery-scenario/6.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" src="../img/alloggi/gallery-scenario/7.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" src="../img/alloggi/gallery-scenario/8.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" src="../img/alloggi/gallery-scenario/9.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" src="../img/alloggi/gallery-scenario/10.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" src="../img/alloggi/gallery-scenario/11.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" src="../img/alloggi/gallery-scenario/12.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" src="../img/alloggi/gallery-scenario/13.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img class="interna" width="100%" src="../img/alloggi/gallery-scenario/14.png" alt="" />
+                            </div>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -129,6 +271,16 @@
 
         setTimeout(function(){
             $('[data-role="contenuto"]').fadeIn();
+            $('#owl-demo').owlCarousel({
+                autoPlay : false,
+                stopOnHover : true,
+                navigation: true,
+                navigationText: [
+                    "<i class='glyphicon glyphicon-chevron-left'></i>",
+                    "<i class='glyphicon glyphicon-chevron-right'></i>"
+                ],
+                singleItem : true
+            });
         }, 2000);
     });
 </script>

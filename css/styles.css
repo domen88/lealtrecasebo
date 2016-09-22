@@ -222,6 +222,14 @@ a
 	background-size: cover;
 }
 
+.chisiamoBody{
+	background: url("../img/chisiamo.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 article{
 	background-color: white;
 }
@@ -445,4 +453,13 @@ img.interna{
 
 .campania{
 	color: #1D4163;
+}
+
+.comesiottengono .owl-theme .owl-controls .owl-buttons .owl-next {
+	 right: 10px;
+	 top: 50%;
+}
+
+.comesiottengono .owl-theme .owl-controls .owl-buttons .owl-prev {
+	top: 50%;
 }
