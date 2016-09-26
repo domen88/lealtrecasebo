@@ -105,6 +105,10 @@
 		text-align: left;
 	}
 
+	.hideMobile{
+		display: none;
+	}
+
 
 }
 
