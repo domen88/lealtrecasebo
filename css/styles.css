@@ -463,3 +463,8 @@ img.interna{
 .comesiottengono .owl-theme .owl-controls .owl-buttons .owl-prev {
 	top: 50%;
 }
+
+.photogallery {
+	background-color: white;
+	margin-top: 10px;
+}
