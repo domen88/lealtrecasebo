@@ -468,3 +468,8 @@ img.interna{
 	background-color: white;
 	margin-top: 10px;
 }
+
+.fb-share-button{
+	display: block !important;
+	text-align: right;
+}
