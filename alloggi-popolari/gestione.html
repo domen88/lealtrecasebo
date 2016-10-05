@@ -4,7 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Altre Case Bologna</title>
+    <title>Ente Gestore</title>
+    <meta name="description" content="Acer Bologna è l’ente, nato nel 2001, che ad oggi gestisce il patrimonio di edilizia residenziale pubblica della città.">
+    <meta name="keywords" content="Acer,Bologna,azienda,casa,popolari,pubblica,manutenzioni,Pro.m.o.s.,paradossi">
+    <meta name="author" content="lealtrecasebo">
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:url" content="http://www.lealtrecasebo.it/alloggi-popolari/gestione.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Ente gestore" />
+    <meta property="og:description" content="Acer Bologna è l’ente, nato nel 2001, che ad oggi gestisce il patrimonio di edilizia residenziale pubblica della città." />
+    <meta property="og:image" content="http://www.lealtrecasebo.it/img/alloggi/gestione1.jpg" />
     <link rel="icon" type="image/png" href="../img/favicon.png" />
     <script src="../js/jquery-1.11.3.js"></script>
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
@@ -13,6 +22,9 @@
     <!-- Custom styles for this template -->
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/mobile.css" rel="stylesheet">
+    <!-- JSOCIAL -->
+    <script src="../js/jssocials.min.js"></script>
+    <link href="../css/jssocials.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
@@ -103,6 +115,8 @@
                 	<div class="innerArticle text-justify">
 	                    <h1>Storia degli alloggi popolari a Bologna</h1>
                         <p><img class="interna" src="../img/alloggi/gestione.png" alt="gestore 1" width="100%" /></p>
+                        <div class="share-button">
+                        </div>
                     </div>
                 </article>
             </div>
@@ -121,6 +135,8 @@
                         <p><em>&laquo;Acer Bologna, entro trenta giorni, procede alla pubblicazione nel sito del documento, dell’informazione o del dato richiesto e lo trasmette contestualmente al richiedente, ovvero comunica al medesimo l’avvenuta pubblicazione, indicando il collegamento ipertestuale a quanto richiesto. Se il documento, l’informazione o il dato richiesti risultano già pubblicati nel rispetto della normativa vigente, l’amministrazione indica al richiedente il relativo collegamento ipertestuale&raquo;.</em></p>
                         <p>Peccato che i 30 giorni siano scaduti il 9 settembre e nella risposta ufficiale Acer non fa altro che fornire uno scadenzario in cui prevede di pubblicare i diversi dati mancanti.</p>
                         <p>Speriamo che questo atteggiamento non sia lo specchio di un tentativo di rimandare il più possibile, consci del fatto che avremmo avuto delle scadenze. Preferiamo piuttosto pensare che, invece di occuparsi di noi, siano stati oberati di lavoro e abbiano perseguito quell’interesse pubblico a cui anche noi miriamo.</p>
+                        <div class="share-button">
+                        </div>
                     </div>
                 </article>
             </div>
@@ -134,6 +150,8 @@
                         <p>È sì una società di nuova costituzione, nello specifico attiva dal 17.12.2015, ma al suo interno ci sono sei cooperative o consorzi, di cui 4 erano proprio quelle che andavano a costituire Acer Manutenzioni Spa. Probabilmente sarà casuale anche il fatto che la liquidazione della vecchia società e l’apertura della nuova avvengano in un lasso di tempo così vicino.</p>
                         <p>Il Presidente di Acer Bologna e l’allora Assessore alle politiche abitative hanno giustificato la questione sostenendo che il bando di gara, fra l’altro indetto a livello europeo, ha visto presentarsi un solo candidato: Gesti.r.e. Srl.</p>
                         <p>A tal proposito, già nel giugno 2015 il Consigliere Regionale dell'Emilia-Romagna per il Partito Democratico, <a href="http://giuseppeparuolo.it/2015/06/08/acer-bologna-e-un-errore-la-nuova-societa-mista/" target="_blank"><strong>Giuseppe Paruolo</strong></a>, aveva espresso i suoi dubbi alla Giunta in merito al già dichiarato intento di Acer Bologna di costituire una nuova società partecipata che andasse a sostituire Acer Manutenzioni Spa, sostenendo che la creazione di una nuova società di scopo violasse le modifiche della Legge Regionale 24 del 2013.</p>
+                        <div class="share-button">
+                        </div>
                     </div>
                 </article>
             </div>
@@ -148,6 +166,8 @@
                         <br />
                         <br />
                         <p>Grazie a lui siamo riuscite a ridimensionare anche quel mito diffuso secondo cui, una volta ottenuta la casa popolare, non si hanno più problemi a mantenersi e ad arrivare a fine mese. Si, perché Giuseppe è ora purtroppo praticamente senza reddito e non riesce più a permettersi nemmeno l’affitto sociale e le spese di luce e gas per il mantenimento dell’appartamento che gli è spettato dopo la morte dei genitori. Si è trovato solo e moroso incolpevole, dentro una casa popolare.</p>
+                        <div class="share-button">
+                        </div>
                     </div>
                 </article>
             </div>
@@ -158,7 +178,46 @@
     $(document).ready(function(){
 
         setTimeout(function(){
-            $('[data-role="contenuto"]').fadeIn();
+            $('[data-role="contenuto"]').fadeIn(function(){
+                $('.share-button').jsSocials({
+                    showLabel: false,
+                    showCount: false,
+                    shareIn: "popup",
+
+                    shares: [
+                        {
+                            renderer: function() {
+                                var $result = $("<div>");
+
+                                var script = document.createElement("script");
+                                script.text = "(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = \"//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.7\"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));";
+                                $result.append(script);
+
+                                $("<div>").addClass("fb-share-button")
+                                        .attr("data-layout", "button")
+                                        .appendTo($result);
+
+                                return $result;
+                            }
+                        },
+                        {
+                            renderer: function() {
+                                var $result = $("<div>");
+
+                                var script = document.createElement("script");
+                                script.text = "window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src=\"https://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,\"script\",\"twitter-wjs\"));";
+                                $result.append(script);
+
+                                $("<a>").addClass("twitter-share-button")
+                                        .text("Tweet")
+                                        .attr("href", "https://twitter.com/share")
+                                        .appendTo($result);
+
+                                return $result;
+                            }
+                        }]
+                });
+            });
         }, 2000);
     });
 </script>

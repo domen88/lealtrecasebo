@@ -4,7 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Altre Case Bologna</title>
+    <title>Social Housing</title>
+    <meta name="description" content="Le iniziative di Social Housing prevedono il coordinamento tra l'intervento pubblico e l'iniziativa privata e si rivolgono alla cosiddetta fascia grigia.">
+    <meta name="keywords" content="Social Housing, emergenza abitativa, Comune di Bologna, Regione Emilia-Romagna, web doc, inchiesta">
+    <meta name="author" content="lealtrecasebo">
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:url" content="http://www.lealtrecasebo.it/risposte-istituzionali/social.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Social Housing" />
+    <meta property="og:description" content="Le iniziative di Social Housing prevedono il coordinamento tra l'intervento pubblico e l'iniziativa privata e si rivolgono alla cosiddetta fascia grigia." />
+    <meta property="og:image" content="http://www.lealtrecasebo.it/img/risposte/social1.jpg" />
     <link rel="icon" type="image/png" href="../img/favicon.png" />
     <script src="../js/jquery-1.11.3.js"></script>
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
@@ -13,6 +22,9 @@
     <!-- Custom styles for this template -->
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/mobile.css" rel="stylesheet">
+    <!-- JSOCIAL -->
+    <script src="../js/jssocials.min.js"></script>
+    <link href="../css/jssocials.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
@@ -132,6 +144,8 @@
                         <p><img class="interna" src="../img/risposte/social1.jpg" alt="social" width="100%" /></p>
                         <p>Non sono forse queste le soluzioni in cui si dovrebbe investire per fornire risposte ai bisogni abitativi delle famiglie bolognesi e italiane? Siamo convinte che il connubio tra pubblico, privato e Terzo settore possa essere la risposta al disagio abitativo, considerato soprattutto il momento storico e la tanto menzionata insufficienza di fondi in favore dell'edilizia residenziale pubblica. Affinché questo accada sono necessari però non solo volontà e nuove idee da parte di tutti gli attori coinvolti, ma anche un forte coordinamento e una progettazione più efficiente.
                             <br/>La strada sembra ancora lunga e complicata...</p>
+                        <div class="share-button">
+                        </div>
                     </div>
                 </article>
             </div>
@@ -142,7 +156,46 @@
     $(document).ready(function(){
 
         setTimeout(function(){
-            $('[data-role="contenuto"]').fadeIn();
+            $('[data-role="contenuto"]').fadeIn(function(){
+                $('.share-button').jsSocials({
+                    showLabel: false,
+                    showCount: false,
+                    shareIn: "popup",
+
+                    shares: [
+                        {
+                            renderer: function() {
+                                var $result = $("<div>");
+
+                                var script = document.createElement("script");
+                                script.text = "(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = \"//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.7\"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));";
+                                $result.append(script);
+
+                                $("<div>").addClass("fb-share-button")
+                                        .attr("data-layout", "button")
+                                        .appendTo($result);
+
+                                return $result;
+                            }
+                        },
+                        {
+                            renderer: function() {
+                                var $result = $("<div>");
+
+                                var script = document.createElement("script");
+                                script.text = "window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src=\"https://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,\"script\",\"twitter-wjs\"));";
+                                $result.append(script);
+
+                                $("<a>").addClass("twitter-share-button")
+                                        .text("Tweet")
+                                        .attr("href", "https://twitter.com/share")
+                                        .appendTo($result);
+
+                                return $result;
+                            }
+                        }]
+                });
+            });
         }, 2000);
     });
 </script>

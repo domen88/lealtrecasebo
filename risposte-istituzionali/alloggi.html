@@ -4,7 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Altre Case Bologna</title>
+    <title>Alloggi di transizione</title>
+    <meta name="description" content="Gli alloggi di transizione rappresentano una delle soluzioni messe in atto dalle istituzioni per fronteggiare l’emergenza abitativa nella città di Bologna">
+    <meta name="keywords" content="alloggi di transizione, emergenza abitativa, Ex Galaxy Bologna, soluzioni istituzionali, Bologna">
+    <meta name="author" content="lealtrecasebo">
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:url" content="http://www.lealtrecasebo.it/risposte-istituzionali/alloggi.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Alloggi di transizione" />
+    <meta property="og:description" content="Gli alloggi di transizione rappresentano una delle soluzioni messe in atto dalle istituzioni per fronteggiare l’emergenza abitativa nella città di Bologna." />
+    <meta property="og:image" content="http://www.lealtrecasebo.it/img/photogallerysito/53.jpg" />
     <link rel="icon" type="image/png" href="../img/favicon.png" />
     <script src="../js/jquery-1.11.3.js"></script>
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
@@ -13,6 +22,9 @@
     <!-- Custom styles for this template -->
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/mobile.css" rel="stylesheet">
+    <!-- JSOCIAL -->
+    <script src="../js/jssocials.min.js"></script>
+    <link href="../css/jssocials.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
@@ -159,6 +171,8 @@
                         <p>L'obiettivo ultimo di tutto il settore vorrebbe essere quindi quello di ricostruire l’identità di una famiglia, aumentarne l’autostima dei membri per favorirne l’inclusione sociale. Una delle attività in questa direzione consiste nel sostegno nella ricerca di un lavoro anche per le donne e poi nell'attivazione di attività di babysitteraggio.  Non sempre purtroppo tutti questi obiettivi vengono raggiunti.</p>
                         <p>E tra i motivi di alcuni insuccessi si trova il <strong>tappo</strong> che si manifesta oggi nell'iter di transizione, che potrebbe essere ampiamente <strong>ridotto se Asp e Serra Zanetti riuscissero ad avere </strong><strong>con Acer </strong><strong>un canale  privilegiato</strong> e ci fosse un unico coordinamento in merito.</p>
                         <p>Per concludere, si può quindi affermare che gli alloggi di transizione vorrebbero in fondo essere una risposta alle falle del sistema dell’Edilizia Residenziale Pubblica di Acer e alle sue lunghissime tempistiche.</p>
+                        <div class="share-button">
+                        </div>
                     </div>
                 </article>
             </div>
@@ -169,7 +183,46 @@
     $(document).ready(function(){
 
         setTimeout(function(){
-            $('[data-role="contenuto"]').fadeIn();
+            $('[data-role="contenuto"]').fadeIn(function(){
+                $('.share-button').jsSocials({
+                    showLabel: false,
+                    showCount: false,
+                    shareIn: "popup",
+
+                    shares: [
+                        {
+                            renderer: function() {
+                                var $result = $("<div>");
+
+                                var script = document.createElement("script");
+                                script.text = "(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = \"//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.7\"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));";
+                                $result.append(script);
+
+                                $("<div>").addClass("fb-share-button")
+                                        .attr("data-layout", "button")
+                                        .appendTo($result);
+
+                                return $result;
+                            }
+                        },
+                        {
+                            renderer: function() {
+                                var $result = $("<div>");
+
+                                var script = document.createElement("script");
+                                script.text = "window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src=\"https://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,\"script\",\"twitter-wjs\"));";
+                                $result.append(script);
+
+                                $("<a>").addClass("twitter-share-button")
+                                        .text("Tweet")
+                                        .attr("href", "https://twitter.com/share")
+                                        .appendTo($result);
+
+                                return $result;
+                            }
+                        }]
+                });
+            });
         }, 2000);
     });
 </script>

@@ -469,7 +469,25 @@ img.interna{
 	margin-top: 10px;
 }
 
-.fb-share-button{
+.share-button{
 	display: block !important;
 	text-align: right;
+}
+
+.share-button-home{
+	display: block !important;
+	text-align: right;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.socialButton{
+	padding-top: 10px;
+	padding-left: 60px;
+	display: block;
+}
+
+.socialButtonMobile{
+	display: none;
 }

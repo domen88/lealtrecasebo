@@ -19,6 +19,18 @@
    		display: none;
    	}
 
+   	.socialButton{
+		display: none;
+	}
+
+	.socialButtonMobile{
+		display: block !important;
+		position: absolute;
+		bottom: 2px;
+		right: 2px;
+		text-align: right;
+	}
+
    	.mute {
    		display: none;
    	}

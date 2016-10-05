@@ -4,7 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Altre Case Bologna</title>
+    <title>Dormitori e Piano freddo</title>
+    <meta name="description" content="Diverse sono le strutture per l'accoglienza di persone senza fissa dimora, ciascuna con le proprie regole, i propri orari e le proprie modalità di accesso.">
+    <meta name="keywords" content="piano freddo, dormitori, emergenza abitativa, Bologna, senza casa, disagio abitativo, risposte istituzionali">
+    <meta name="author" content="lealtrecasebo">
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:url" content="http://www.lealtrecasebo.it/risposte-istituzionali/piano.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Dormitori e Piano freddo" />
+    <meta property="og:description" content="Diverse sono le strutture per l'accoglienza di persone senza fissa dimora, ciascuna con le proprie regole, i propri orari e le proprie modalità di accesso." />
+    <meta property="og:image" content="http://www.lealtrecasebo.it/img/photogallerysito/54.jpg" />
+
     <link rel="icon" type="image/png" href="../img/favicon.png" />
     <script src="../js/jquery-1.11.3.js"></script>
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
@@ -13,6 +23,9 @@
     <!-- Custom styles for this template -->
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/mobile.css" rel="stylesheet">
+    <!-- JSOCIAL -->
+    <script src="../js/jssocials.min.js"></script>
+    <link href="../css/jssocials.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
@@ -103,7 +116,7 @@
                 	<div class="innerArticle text-justify">
 	                    <h1>Dormitori</h1>
                         <p>A Bologna sono presenti diverse strutture destinate all'accoglienza di persone senza fissa dimora, ciascuna con le proprie regole, i propri orari e le proprie modalità di accesso, tutte descritte nel dettaglio all'interno dell'<a href="http://www.comune.bologna.it/sportellosociale/servizi/2625/2702/" target="_blank">apposita sezione</a> sul sito del Comune di Bologna.</p>
-                        <iframe src="https://www.google.com/maps/d/embed?mid=10e8pd7QaregU0M3QR0NZ6001lxE" width="100%" height="60%" frameborder="0"></iframe>
+                        <iframe id="frameMap" src="https://www.google.com/maps/d/embed?mid=10e8pd7QaregU0M3QR0NZ6001lxE" width="100%" height="60%" frameborder="0"></iframe>
                         <br />
                         <br />
                         <ul style="list-style: disc;">
@@ -116,6 +129,8 @@
                             <li><strong>Opera Padre Marella</strong>: via del Lavoro 13 - 70 posti solo per uomini maggiorenni - Accesso tramite Servizi sociali e ASP.</li>
                             <li><strong>Centro d'Accoglienza San Ruffillo </strong>di Antoniano - via Toscana 130 - 20 posti - Permanenza di massimo 6 mesi - Accesso tramite servizi o su invio dell'Antoniano.</li>
                         </ul>
+                        <div class="share-button">
+                        </div>
                     </div>
                 </article>
             </div>
@@ -139,6 +154,8 @@
                         <p>Per quanto utili, tuttavia, servizi di questo genere non rappresentano altro che un <strong>tampone</strong> finalizzato ad arginare una <strong>problematica ormai non più riconducibile al concetto di "emergenza"</strong>, ma che rappresenta una situazione ormai consolidata per centinaia di individui.</p>
                         <p>Le soluzioni proposte dalle istituzioni dovrebbero quindi diventare oggetto di <strong>modifiche radicali</strong> che permettano alle persone senza casa di affrontare una condizione di vita che non interessa unicamente i mesi invernali, ma <strong>ogni singolo giorno dell'anno</strong>.</p>
                         <p>Lo stesso collettivo Làbas ci ha riferito che, già nel corso delle settimane appena precedenti la chiusura del Piano Freddo, il loro sportello si riempie di persone che non hanno idea di dove andare una volta che quelle strutture cesseranno i servizi destinati al Piano.</p>
+                        <div class="share-button">
+                        </div>
                     </div>
                 </article>
             </div>
@@ -149,7 +166,50 @@
     $(document).ready(function(){
 
         setTimeout(function(){
-            $('[data-role="contenuto"]').fadeIn();
+            $('[data-role="contenuto"]').fadeIn(function(){
+
+                var frameUrl = $('iframe#frameMap').attr('src');
+                $('iframe#frameMap').attr('src', frameUrl);
+
+                $('.share-button').jsSocials({
+                    showLabel: false,
+                    showCount: false,
+                    shareIn: "popup",
+
+                    shares: [
+                        {
+                            renderer: function() {
+                                var $result = $("<div>");
+
+                                var script = document.createElement("script");
+                                script.text = "(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = \"//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.7\"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));";
+                                $result.append(script);
+
+                                $("<div>").addClass("fb-share-button")
+                                        .attr("data-layout", "button")
+                                        .appendTo($result);
+
+                                return $result;
+                            }
+                        },
+                        {
+                            renderer: function() {
+                                var $result = $("<div>");
+
+                                var script = document.createElement("script");
+                                script.text = "window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src=\"https://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,\"script\",\"twitter-wjs\"));";
+                                $result.append(script);
+
+                                $("<a>").addClass("twitter-share-button")
+                                        .text("Tweet")
+                                        .attr("href", "https://twitter.com/share")
+                                        .appendTo($result);
+
+                                return $result;
+                            }
+                        }]
+                });
+            });
         }, 2000);
     });
 </script>

@@ -4,7 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Altre Case Bologna</title>
+    <title>Lo scandalo del 2004</title>
+    <meta name="description" content="Antonio Amorosi Ex Assessore alle politiche abitative nel 2004 racconta gli illeciti nelle assegnazioni degli alloggi ERP.">
+    <meta name="keywords" content="emergenza abitativa, illeciti 2004, affittopoli Bologna, Commissione casa, Emilia Romagna">
+    <meta name="author" content="lealtrecasebo">
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:url" content="http://www.lealtrecasebo.it/alloggi-popolari/scandalo_2004.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Lo scandalo del 2004 " />
+    <meta property="og:description" content="Antonio Amorosi Ex Assessore alle politiche abitative nel 2004 racconta gli illeciti nelle assegnazioni degli alloggi ERP." />
+    <meta property="og:video" content="https://youtu.be/7kxE66zzGI4" />
     <link rel="icon" type="image/png" href="../img/favicon.png" />
     <script src="../js/jquery-1.11.3.js"></script>
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
@@ -13,6 +22,9 @@
     <!-- Custom styles for this template -->
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/mobile.css" rel="stylesheet">
+    <!-- JSOCIAL -->
+    <script src="../js/jssocials.min.js"></script>
+    <link href="../css/jssocials.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
@@ -118,6 +130,8 @@
                         <p>A prescindere da ogni considerazione in ordine alla configurabilità del reato di abuso di ufficio, è dunque palese l’illegittimità di una condotta che confligge con una buona amministrazione del patrimonio pubblico destinato ai cittadini realmente bisognosi.</p>
                         <p>Non mancano, infatti, i riscontri a situazioni a dir poco paradossali. Si è registrato fra gli altri il caso di chi, pur non avendo partecipato ad alcun bando ERP e non essendo dunque in possesso di alcuna documentazione per la verifica dei requisiti, ha visto il parere della commissione “favorevole” alla sua assegnazione grazie al fatto che la sua attività artistica <i>&laquo;fornisce un contributo importante ai rapporti tra Italia e Lettonia</i>&raquo;.</p>
                         <p><a href="http://www.casadellalegalita.info/index.php/altre-regioni/emilia-romagna/case-popolari-a-bologna/11662-il-dossier-sullinchiesta-sullillegalit-nellassegnazione-delle-case-popolari-a-bologna" target="_blank"><strong>IL DOSSIER</strong></a></p>
+                        <div class="share-button">
+                        </div>
                     </div>
                 </article>
             </div>
@@ -128,7 +142,46 @@
     $(document).ready(function(){
 
         setTimeout(function(){
-            $('[data-role="contenuto"]').fadeIn();
+            $('[data-role="contenuto"]').fadeIn(function(){
+                $('.share-button').jsSocials({
+                    showLabel: false,
+                    showCount: false,
+                    shareIn: "popup",
+
+                    shares: [
+                        {
+                            renderer: function() {
+                                var $result = $("<div>");
+
+                                var script = document.createElement("script");
+                                script.text = "(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = \"//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.7\"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));";
+                                $result.append(script);
+
+                                $("<div>").addClass("fb-share-button")
+                                        .attr("data-layout", "button")
+                                        .appendTo($result);
+
+                                return $result;
+                            }
+                        },
+                        {
+                            renderer: function() {
+                                var $result = $("<div>");
+
+                                var script = document.createElement("script");
+                                script.text = "window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src=\"https://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,\"script\",\"twitter-wjs\"));";
+                                $result.append(script);
+
+                                $("<a>").addClass("twitter-share-button")
+                                        .text("Tweet")
+                                        .attr("href", "https://twitter.com/share")
+                                        .appendTo($result);
+
+                                return $result;
+                            }
+                        }]
+                });
+            });
         }, 2000);
     });
 </script>

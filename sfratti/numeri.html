@@ -4,7 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Altre Case Bologna</title>
+    <title> I numeri della crisi</title>
+    <meta name="description" content= "Dal 2007 ad oggi in Italia si assiste ad un progressivo aumento degli sfratti. Emilia-Romagna e Bologna si collocano tra le situazioni peggiori">
+    <meta name="keywords" content="sfratti, crisi economica, sfratti Bologna, Emilia-Romagna, provvedimenti esecutivi, sfratti seseguiti">
+    <meta name="author" content="lealtrecasebo">
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:url" content="http://www.lealtrecasebo.it/sfratti/numeri.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="I numeri della crisi" />
+    <meta property="og:description" content="Dal 2007 ad oggi in Italia si assiste ad un progressivo aumento degli sfratti. Emilia-Romagna e Bologna si collocano tra le situazioni peggiori" />
+    <meta property="og:image" content="http://www.lealtrecasebo.it/img/sfratti/Emilia%20Romagna.jpg" />
     <link rel="icon" type="image/png" href="../img/favicon.png" />
     <script src="../js/jquery-1.11.3.js"></script>
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
@@ -13,6 +22,9 @@
     <!-- Custom styles for this template -->
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/mobile.css" rel="stylesheet">
+    <!-- JSOCIAL -->
+    <script src="../js/jssocials.min.js"></script>
+    <link href="../css/jssocials.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
@@ -155,6 +167,8 @@
                         <script id="infogram_0_9f1ec3e7-a3bf-45a5-a28d-cf74e380c1fa" title="Untitled chart" src="//e.infogr.am/js/embed.js?qrb" type="text/javascript"></script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"></div>
                         <br />
                         <p>Per quanto poi ci sia nell’opinione comune l’idea che in fondo in <strong>Emilia Romagna</strong>, e più in particolare a <strong>Bologna</strong>, la situazione non sia poi così problematica rispetto al resto d’Italia, è bene invece sottolineare come questa regione si collochi tra le quattro peggiori d'Italia. Infine, anche il capoluogo emiliano rappresenta una tra le peggiori città per numero di sfratti per abitanti, con 1 sfratto ogni 369 famiglie. Purtroppo anche questi dati sono incompleti, ma quando si potranno visionare gli sfratti eseguiti effettivi si dovrebbe verosimilmente registrare un numero ancora peggiore di questo e comunque specchio del forte disagio abitativo.</p>
+                        <div class="share-button">
+                        </div>
                     </div>
                 </article>
             </div>
@@ -165,7 +179,47 @@
     $(document).ready(function(){
 
         setTimeout(function(){
-            $('[data-role="contenuto"]').fadeIn();
+            $('[data-role="contenuto"]').fadeIn(function(){
+                $('.share-button').jsSocials({
+                    showLabel: false,
+                    showCount: false,
+                    shareIn: "popup",
+
+                    shares: [
+                        {
+                            renderer: function() {
+                                var $result = $("<div>");
+
+                                var script = document.createElement("script");
+                                script.text = "(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = \"//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.7\"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));";
+                                $result.append(script);
+
+                                $("<div>").addClass("fb-share-button")
+                                        .attr("data-layout", "button")
+                                        .appendTo($result);
+
+                                return $result;
+                            }
+                        },
+                        {
+                            renderer: function() {
+                                var $result = $("<div>");
+
+                                var script = document.createElement("script");
+                                script.text = "window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src=\"https://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,\"script\",\"twitter-wjs\"));";
+                                $result.append(script);
+
+                                $("<a>").addClass("twitter-share-button")
+                                        .text("Tweet")
+                                        .attr("href", "https://twitter.com/share")
+                                        .appendTo($result);
+
+                                return $result;
+                            }
+                        }]
+                });
+            });
+
         }, 2000);
 
     });
